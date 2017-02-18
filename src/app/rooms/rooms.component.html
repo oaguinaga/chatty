@@ -1,0 +1,22 @@
+
+<div class="row">
+  <div class="chat-room  col-xs-6 col-sm-3 shadow-right">
+    <div class="logo"><img src="./assets/chatty.svg"></div>
+    <p><i class="active fa fa-user-circle-o" aria-hidden="true"></i>
+      Omar Aguinaga</p>
+
+    <hr>
+    <p class="light"> CHAT ROOMS </p>
+
+    <a *ngFor="let room of rooms | async">
+      <div class="show-info chat-room-line">
+        <i class="light fa fa-hashtag" aria-hidden="true"></i> {{ room.name }}
+        <div class="info"> 
+          {{ room.description }} <br>
+          <i class="fa fa-calendar" aria-hidden="true"></i> {{ room.timestamp | date }} 
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+

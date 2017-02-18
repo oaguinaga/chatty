@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+  font-size: 100%;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;             
+  min-height: 100%;        
+  background: #02AAB0;
+  background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p i {
+  padding-right:5px; 
+}
+
+p i.active {
+  color: #16a085;
+}
+
+.bold{
+  font-weight:400;
+}
+
+.light{
+  font-weight: 100;
+}
+
+.right{
+  float: right;
+}
+
+textarea, input, button { outline: none; }
+
+.shadow-right{
+  -webkit-box-shadow: 5px 0px 20px #02AAB0;
+  -moz-box-shadow: 5px 0px 20px #02AAB0;
+  box-shadow: 5px 0px 20px #02AAB0;
+}
+
+i{
+  font-size: 1.5em;
+}
+
+i.light{
+  -webkit-text-stroke: 1px #2fd4ba;
+}
+
+
