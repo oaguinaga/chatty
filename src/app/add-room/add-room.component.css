@@ -1,0 +1,56 @@
+button.add-room{
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  background-color: red;
+}
+
+.modal-header{
+  background-color: rgba(236, 240, 241,0.4);
+  border: none;
+  background: #02AAB0;
+  background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.modal-content{
+  background-color: #00CDAC;
+}
+
+button.close{
+  color: white;
+}
+
+.input-group{
+  margin-top: 2em;
+}
+
+i.add{
+  font-size: 1.5em;
+}
+
+i.light{
+  -webkit-text-stroke: 1px #2fd4ba;
+}
+
+button.btn-default{
+  margin: 0 auto;
+  background-color: transparent;
+  border:5px solid rgba(236, 240, 241,.2);
+  color: white;
+}
+
+
+button.btn-default:hover{
+  background-color: rgba(236, 240, 241,0.4);
+  border:5px solid rgba(236, 240, 241,.8);
+}
+
+input, select, textarea{
+  color: #16a085;
+  font-weight:400;
+}

@@ -8,7 +8,7 @@ import { AngularFire,FirebaseListObservable } from 'angularfire2';
 })
 export class RoomsComponent implements OnInit {
 
-  rooms: FirebaseListObservble<any>;
+  rooms: FirebaseListObservable<any>;
   constructor(af: AngularFire) {
     this.rooms = af.database.list('/rooms');
   }

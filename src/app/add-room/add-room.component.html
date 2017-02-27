@@ -1,0 +1,74 @@
+<!--Button to show modal-->
+<!--1-->
+<button class="right add-room" type="button"(click)="staticModal.show()">
+  <i class="add light fa fa-plus-square-o" aria-hidden="true"></i>
+</button>
+
+<!--Modal-->
+<!--2-->
+<div class="modal fade" bsModal #staticModal="bs-modal" 
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="light modal-title pull-left">Create new Room</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        
+        <div class="form-group">
+          <label class="light" for="RoomName">Room Name</label>
+          
+          <!-- #3 -->
+          <input type="text" class="form-control" #name [(ngModel)]="roomValue" >
+        </div>
+
+        <div class="form-group">
+          <label class="light" for="RoomDescription">Room Description</label>
+          
+          <!-- #4 -->
+          <input type="text" class="form-control" #description [(ngModel)]="descriptionValue">
+        </div>
+        
+        <!-- #5 -->
+        <button type="submit" class="center-block light btn btn-default" (click)="addRoom(name.value, description.value); staticModal.hide()"><i class="fa fa-plus" aria-hidden="true"></i>Add Room</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<button type="button" class="right add-room" (click)="staticModal.show()">
+  <i class="add light fa fa-plus-square-o" aria-hidden="true"></i>
+</button>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" 
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Create new Room</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Enter a room name
+
+
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Name" #name [(ngModel)]="roomVal">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" (click)="addRoom(name.value); staticModal.hide()">Go!</button>
+          </span>
+        </div>/input-group
+
+      </div>
+    </div>
+  </div>
+</div>
+-->

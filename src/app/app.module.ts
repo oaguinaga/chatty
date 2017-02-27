@@ -7,6 +7,10 @@ import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 import { RoomsComponent } from './rooms/rooms.component';
+import { AddRoomComponent } from './add-room/add-room.component';
+
+//Bootstrap Modules
+import { ModalModule } from 'ng2-bootstrap/modal';
 
 
 
@@ -21,9 +25,11 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    RoomsComponent
+    RoomsComponent,
+    AddRoomComponent
   ],
   imports: [
+    ModalModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,
